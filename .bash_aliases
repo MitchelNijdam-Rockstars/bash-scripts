@@ -1,7 +1,10 @@
 alias cdmitch='cd /mnt/c/Users/mitch'
 export MITCH='/mnt/c/Users/mitch'
 
+alias k='kubectl'
+
 # function to generate sealedsecret and copy it to clipboard (Ubuntu for Windows)
+# kubeseal and yq required
 kseal() {
   if [ "$1" == "-h" ]; then
     echo "Usage: kseal [SECRET_NAME] [VALUE] [-h]"
